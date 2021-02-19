@@ -1,1 +1,27 @@
-<p>lista-pokemons works!</p>
+<mat-toolbar>
+  Menu
+</mat-toolbar>
+
+ <h1> Lista de Pokemons</h1>
+
+<div class="lista-row">
+
+  <div class="card-pokemon" *ngFor="let item of pokemons">
+
+
+    <mat-card>
+
+      <mat-card-header>
+        <div mat-card-avatar>
+          <img mat-card-avatar src={{item.imagem}}>
+        </div>
+        <mat-card-title>
+           {{item.nome}}
+          </mat-card-title>
+      </mat-card-header>
+
+      <img mat-card-image src={{item.imagem}}>
+    </mat-card>
+  </div>
+
+</div>
